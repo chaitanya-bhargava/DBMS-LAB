@@ -1,5 +1,4 @@
 import mysql.connector as c
-import datetime
 con=c.connect(host="localhost",user="root",password="",database="question_1")
 if con.is_connected() :
     mycursor=con.cursor()
