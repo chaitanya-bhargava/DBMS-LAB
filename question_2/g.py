@@ -3,8 +3,5 @@ con=c.connect(host="localhost",user="root",password="",database="question_2")
 if con.is_connected() :
     mycursor=con.cursor()
     mycursor.execute("ALTER TABLE customer ADD COLUMN cust_dob date")
-    myresult=mycursor.fetchall()
-    for j in myresult:
-        print(j)
 else:
     print("Not connected")
